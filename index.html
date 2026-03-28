@@ -1,0 +1,210 @@
+
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NBA伤病查询</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+                line-height: 1.6;
+            }
+            
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            header {
+                text-align: center;
+                margin-bottom: 30px;
+                padding: 20px 0;
+                background-color: #1a73e8;
+                color: white;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            
+            h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            h1 span {
+                margin-right: 10px;
+            }
+            
+            .date {
+                font-size: 16px;
+                opacity: 0.9;
+            }
+            
+            .game-card {
+                background-color: white;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            
+            .game-time {
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 10px;
+            }
+            
+            .game-info {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            
+            .team-section {
+                margin-bottom: 15px;
+            }
+            
+            .team-name {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: #1a73e8;
+            }
+            
+            .injury-list {
+                list-style: none;
+            }
+            
+            .injury-item {
+                padding: 8px 0;
+                border-bottom: 1px solid #f0f0f0;
+            }
+            
+            .injury-item:last-child {
+                border-bottom: none;
+            }
+            
+            .injury-detail {
+                font-size: 14px;
+                color: #666;
+                margin-top: 5px;
+                padding-left: 15px;
+            }
+            
+            .no-injury {
+                color: #4caf50;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px 0;
+            }
+            
+            .no-games {
+                text-align: center;
+                background-color: white;
+                border-radius: 10px;
+                padding: 40px 20px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                color: #666;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1><span>🏀</span> 世界之巅球员伤病参考</h1>
+                <div class="date">03月29日</div>
+            </header>
+    
+            <div class="game-card">
+                <div class="game-time">3:00</div>
+                <div class="game-info">马刺 vs 雄鹿</div>
+                
+                <div class="team-section">
+                    <div class="team-name">马刺伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">卢克-科内特: 出战<div class="injury-detail">原因: 右膝<br>时间表: 3月25日，右膝酸痛，周日对阵雄鹿将出战。</div></li><li class="injury-item">福克斯 重要: 出战<div class="injury-detail">原因: 腰部<br>时间表: 3月25日，腰部紧张，周日对阵雄鹿将出战。</div></li></ul>
+                </div>
+                
+                <div class="team-section">
+                    <div class="team-name">雄鹿伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">特纳: 出战成疑<div class="injury-detail">原因: 右小腿<br>时间表: 3月26日，右小腿疼痛，周日对阵马刺出战成疑。</div></li><li class="injury-item">波蒂斯: 出战成疑<div class="injury-detail">原因: 右手腕<br>时间表: 3月25日，右手腕扭伤，周日对阵马刺出战成疑。</div></li><li class="injury-item">库兹马: 出战成疑<div class="injury-detail">原因: 右跟腱<br>时间表: 3月22日，右跟腱紧张，周日对阵马刺出战成疑。</div></li><li class="injury-item">加里-哈里斯: 出战成疑<div class="injury-detail">原因: 腹股沟<br>时间表: 3月21日，腹股沟疼痛，周日对阵马刺出战成疑。</div></li><li class="injury-item">凯文-波特: 缺席<div class="injury-detail">原因: 膝盖<br>时间表: 3月21日，膝盖疼痛，归期未定。</div></li><li class="injury-item">扬尼斯-阿德托昆博: 缺席<div class="injury-detail">原因: 左脚踝<br>时间表: 3月17日，左脚踝疼痛，将在2周后重新复查。</div></li></ul>
+                </div>
+            </div>
+        
+            <div class="game-card">
+                <div class="game-time">5:30</div>
+                <div class="game-info">活塞 vs 森林狼</div>
+                
+                <div class="team-section">
+                    <div class="team-name">活塞伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">杜伦: 出战成疑<div class="injury-detail">原因: 膝盖<br>时间表: 3月28日，膝盖疼痛，周日对阵森林狼出战成疑。</div></li><li class="injury-item">奥萨尔-汤普森: 出战成疑<div class="injury-detail">原因: 脚踝<br>时间表: 3月28日，脚踝疼痛，周日对阵森林狼出战成疑。</div></li><li class="injury-item">哈里斯: 出战成疑<div class="injury-detail">原因: 左臀<br>时间表: 3月28日，左臀酸痛，周日对阵森林狼出战成疑。</div></li><li class="injury-item">马库斯-萨瑟: 可能出战<div class="injury-detail">原因: 臀部<br>时间表: 3月28日，臀部疼痛，周日对阵森林狼可能出战。</div></li><li class="injury-item">勒韦尔: 可能出战<div class="injury-detail">原因: 膝盖<br>时间表: 3月27日，膝盖疼痛，周日对阵森林狼可能出战。</div></li><li class="injury-item">邓肯-罗宾逊: 出战成疑<div class="injury-detail">原因: 手腕<br>时间表: 3月27日，手腕疼痛，周日对阵森林狼出战成疑。</div></li><li class="injury-item">坎宁安: 缺席<div class="injury-detail">原因: 背部<br>时间表: 3月18日，背部痉挛，将在2周后重新复查。</div></li><li class="injury-item">斯图尔特: 缺席<div class="injury-detail">原因: 左小腿<br>时间表: 3月15日，左小腿拉伤，归期未定。</div></li></ul>
+                </div>
+                
+                <div class="team-section">
+                    <div class="team-name">森林狼伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">多森姆: 出战成疑<div class="injury-detail">原因: 右小腿<br>时间表: 3月25日，右小腿酸痛，周日对阵活塞出战成疑。</div></li><li class="injury-item">麦克丹尼尔斯 重要: 缺席<div class="injury-detail">原因: 膝盖<br>时间表: 3月28日，膝盖挫伤，周日对阵活塞将缺席。</div></li><li class="injury-item">爱德华兹: 缺席<div class="injury-detail">原因: 右膝<br>时间表: 3月17日，右膝酸痛，将在1-2周后重新复查。</div></li></ul>
+                </div>
+            </div>
+        
+            <div class="game-card">
+                <div class="game-time">7:30</div>
+                <div class="game-info">国王 vs 老鹰</div>
+                
+                <div class="team-section">
+                    <div class="team-name">国王伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">基利安-海耶斯: 出战成疑<div class="injury-detail">原因: 左手指<br>时间表: 3月27日，左手指扭伤，周日对阵老鹰出战成疑。</div></li><li class="injury-item">尼克-克利福德: 出战成疑<div class="injury-detail">原因: 左脚踝<br>时间表: 3月23日，左脚踝扭伤，周日对阵老鹰出战成疑。</div></li><li class="injury-item">威斯布鲁克: 缺席<div class="injury-detail">原因: 右脚<br>时间表: 3月22日，右脚酸痛，归期未定。</div></li><li class="injury-item">尤班克斯: 缺席<div class="injury-detail">原因: 左拇指<br>时间表: 3月14日，左拇指韧带撕裂，赛季报销。</div></li><li class="injury-item">基根-穆雷: 缺席<div class="injury-detail">原因: 左脚踝<br>时间表: 2月26日，左脚踝扭伤，将至少缺席5周。</div></li><li class="injury-item">萨博尼斯: 缺席<div class="injury-detail">原因: 左膝<br>时间表: 2月19日，接受左膝半月板撕裂修复手术，赛季提前报销。</div></li><li class="injury-item">亨特: 缺席<div class="injury-detail">原因: 左眼<br>时间表: 2月7日，左眼挫伤，将接受眼部手术，赛季报销。</div></li><li class="injury-item">拉文: 缺席<div class="injury-detail">原因: 右中指<br>时间表: 2月8日，右中指疼痛，将在全明星赛后接受右手手术，赛季报销。</div></li></ul>
+                </div>
+                
+                <div class="team-section">
+                    <div class="team-name">老鹰伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">乔克-兰代尔: 出战成疑<div class="injury-detail">原因: 肩部<br>时间表: 3月28日，肩部疼痛，周日对阵国王出战成疑。</div></li><li class="injury-item">雅各布-托平: 缺席<div class="injury-detail">原因: 右肩<br>时间表: 12月1日，右肩拉伤，赛季报销。</div></li></ul>
+                </div>
+            </div>
+        
+            <div class="game-card">
+                <div class="game-time">8:00</div>
+                <div class="game-info">公牛 vs 灰熊</div>
+                
+                <div class="team-section">
+                    <div class="team-name">公牛伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">理查兹: 出战成疑<div class="injury-detail">原因: 右肘<br>时间表: 3月26日，右肘挫伤，周日对阵灰熊出战成疑。</div></li><li class="injury-item">杰伦-史密斯: 缺席<div class="injury-detail">原因: 右小腿<br>时间表: 3月26日，右小腿伤势复发，赛季报销。</div></li><li class="injury-item">安芬尼-西蒙斯: 缺席<div class="injury-detail">原因: 左手腕<br>时间表: 2月22日，左手腕骨折，归期未定。</div></li><li class="injury-item">艾维: 缺席<div class="injury-detail">原因: 左膝<br>时间表: 2月21日，左膝疼痛，赛季报销。</div></li><li class="injury-item">扎克-科林斯: 缺席<div class="injury-detail">原因: 右脚趾<br>时间表: 12月29日，右脚趾酸痛，将接受手术，赛季报销。</div></li><li class="injury-item">埃森格: 缺席<div class="injury-detail">原因: 左肩<br>时间表: 12月1日，左肩拉伤，赛季报销。</div></li></ul>
+                </div>
+                
+                <div class="team-section">
+                    <div class="team-name">灰熊伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">杰伦-威尔斯: 出战成疑<div class="injury-detail">原因: 右脚趾<br>时间表: 3月25日，右脚趾酸痛，周日对阵公牛出战成疑。</div></li><li class="injury-item">泰-杰罗姆: 出战成疑<div class="injury-detail">原因: 左脚踝<br>时间表: 3月25日，左脚踝扭伤，周日对阵公牛出战成疑。</div></li><li class="injury-item">马沙克: 出战成疑<div class="injury-detail">原因: 脚踝<br>时间表: 3月18日，脚踝疼痛，周日对阵公牛出战成疑。</div></li><li class="injury-item">皮彭: 缺席<div class="injury-detail">原因: 左大脚趾<br>时间表: 3月9日，左大脚趾扭伤，3月18日，成功接受切除手术，赛季报销。</div></li><li class="injury-item">阿尔达马: 缺席<div class="injury-detail">原因: 右膝<br>时间表: 3月5日，右膝疼痛，将接受关节镜手术，赛季报销。</div></li><li class="injury-item">波普: 缺席<div class="injury-detail">原因: 右小指<br>时间表: 2月19日，接受右小指错位手术，赛季报销。</div></li><li class="injury-item">莫兰特: 缺席<div class="injury-detail">原因: 左肘<br>时间表: 1月23日，左肘韧带撕裂，赛季报销。</div></li><li class="injury-item">布兰登-克拉克: 缺席<div class="injury-detail">原因: 右小腿<br>时间表: 12月22日，右小腿2级拉伤，赛季报销。</div></li><li class="injury-item">扎克-埃迪: 缺席<div class="injury-detail">原因: 左脚踝<br>时间表: 12月11日，左脚踝严重扭伤，已成功接受手术，赛季报销。</div></li></ul>
+                </div>
+            </div>
+        
+            <div class="game-card">
+                <div class="game-time">10:00</div>
+                <div class="game-info">爵士 vs 太阳</div>
+                
+                <div class="team-section">
+                    <div class="team-name">爵士伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">科利尔: 出战成疑<div class="injury-detail">原因: 腿筋<br>时间表: 3月20日，腿筋疼痛，周日对阵太阳出战成疑。</div></li><li class="injury-item">基扬特-乔治: 缺席<div class="injury-detail">原因: 右腿筋<br>时间表: 3月12日，右腿筋2级拉伤，将至少缺席3周。</div></li><li class="injury-item">马尔卡宁: 缺席<div class="injury-detail">原因: 脚踝<br>时间表: 2月25日，训练中髋部和脚踝受伤，归期未定。</div></li><li class="injury-item">努尔基奇: 缺席<div class="injury-detail">原因: 鼻子<br>时间表: 2月23日，鼻子挫伤，将接受鼻部手术，赛季报销。</div></li><li class="injury-item">贾伦-杰克逊: 缺席<div class="injury-detail">原因: 左膝<br>时间表: 2月13日，左膝疼痛，2月18日，已成功接受手术，赛季报销。</div></li><li class="injury-item">沃克-凯斯勒: 缺席<div class="injury-detail">原因: 左肩<br>时间表: 11月2日，左肩盂唇撕裂需要手术处理，赛季报销。</div></li></ul>
+                </div>
+                
+                <div class="team-section">
+                    <div class="team-name">太阳伤病情况</div>
+                    <ul class="injury-list"><li class="injury-item">瑞安-邓恩: 出战<div class="injury-detail">原因: 右腹股沟<br>时间表: 3月25日，右腹股沟酸痛，周日对阵爵士将出战。</div></li><li class="injury-item">海史密斯: 缺席<div class="injury-detail">原因: 膝盖<br>时间表: 3月20日，膝盖疼痛，周日对阵爵士将缺席。</div></li><li class="injury-item">科菲: 缺席<div class="injury-detail">原因: 左脚踝<br>时间表: 3月20日，左脚踝扭伤，周日对阵爵士将缺席。</div></li><li class="injury-item">马克-威廉姆斯: 缺席<div class="injury-detail">原因: 左脚<br>时间表: 3月5日，左脚酸痛，将缺席2-3周。</div></li><li class="injury-item">狄龙-布鲁克斯: 缺席<div class="injury-detail">原因: 左手<br>时间表: 2月22日，左手骨折，将缺席4-6周。</div></li></ul>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+    </html>
+    
